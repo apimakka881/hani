@@ -204,7 +204,7 @@ def chatbot(message):
                 {"role": "user", "content": full_context + message.text}  # Include user's message
             ],
             temperature=0.5,
-            max_tokens=1024,
+            max_tokens=8192,
             top_p=0.65,
             stream=True,
             stop=None,
